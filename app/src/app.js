@@ -1,7 +1,7 @@
 (function(){
 
     angular
-      .module('VideoclubApp', ['ngMaterial', 'users', 'dashboard'])
+      .module('VideoclubApp', ['ngMaterial', 'routes', 'users', 'dashboard'])
       .config(function($mdThemingProvider, $mdIconProvider){
 
           $mdIconProvider
