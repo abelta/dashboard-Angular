@@ -12,7 +12,8 @@
                 })
                 .when('/income', {
                     templateUrl: 'src/income/view/indexIncome.html',
-                    controller: 'IncomeController'
+                    controller: 'IncomeController',
+                    controllerAs: 'incomeCrtl'  
                 })
                 .otherwise({
                     redirectTo: '/'

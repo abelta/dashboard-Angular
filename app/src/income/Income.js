@@ -1,5 +1,5 @@
 (function(){
 
-    angular.module('income', ['ngMaterial']);
+    angular.module('income', ['ngMaterial', 'chart.js']);
 
 })();
