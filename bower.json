@@ -12,7 +12,8 @@
     "angular-material": "^0.9.0",
     "Chart.js": "~1.0.2",
     "angular-route": "^1.3.x",
-    "Faker": "~2.1.3"
+    "Faker": "~2.1.3",
+    "angular-smart-table": "~2.0.3"
   },
   "devDependencies": {
     "angular-material": "~0.9.4"

@@ -1,1 +1,24 @@
 <h1>Index Users</h1>
+
+<md-content>
+
+
+<table st-table="userCrtl.users" st-safe-src="userCrtl.users" class="table table-striped">
+
+    <thead>
+        <th>Avatar</th>
+        <th st-sort="name">Name</th>
+        <th st-sort="email">Email</th>
+    </thead>
+
+    <tbody>
+        <tr class="md-whiteframe-z1" ng-repeat="user in userCrtl.users">
+            <td><md-icon md-svg-icon="{{user.avatar}}" class="avatar"></md-icon></td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+</md-content>

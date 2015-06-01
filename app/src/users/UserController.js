@@ -15,13 +15,14 @@
    * @constructor
    */
   function UserController( userService, $mdSidenav, $mdBottomSheet, $log, $q) {
+  
     var self = this;
 
     self.selected     = null;
     self.users        = [ ];
-    self.selectUser   = selectUser;
-    self.toggleList   = toggleUsersList;
-    self.showContactOptions  = showContactOptions;
+    //self.selectUser   = selectUser;
+    //self.toggleList   = toggleUsersList;
+    //self.showContactOptions  = showContactOptions;
 
     // Load all registered users
 
@@ -40,6 +41,7 @@
      * First hide the bottomsheet IF visible, then
      * hide or Show the 'left' sideNav area
      */
+    /*
     function toggleUsersList() {
       var pending = $mdBottomSheet.hide() || $q.when(true);
 
@@ -47,19 +49,23 @@
         $mdSidenav('left').toggle();
       });
     }
+    */
 
     /**
      * Select the current avatars
      * @param menuId
      */
+    /*
     function selectUser ( user ) {
       self.selected = angular.isNumber(user) ? $scope.users[user] : user;
       self.toggleList();
     }
+    */
 
     /**
      * Show the bottom sheet
      */
+    /*
     function showContactOptions($event) {
         var user = self.selected;
 
@@ -73,10 +79,11 @@
         }).then(function(clickedItem) {
           clickedItem && $log.debug( clickedItem.name + ' clicked!');
         });
-
+    */
         /**
          * Bottom Sheet controller for the Avatar Actions
          */
+        /* 
         function ContactPanelController( $mdBottomSheet ) {
           this.user = user;
           this.actions = [
@@ -89,7 +96,10 @@
             $mdBottomSheet.hide(action);
           };
         }
+        */
+    /*
     }
+    */
 
   }
 

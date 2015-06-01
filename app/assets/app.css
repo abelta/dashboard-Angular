@@ -90,6 +90,11 @@ md-button.menuBtn > md-icon {
   max-width: 500px;
 }
 
+
+table [st-sort] {
+  cursor: pointer;
+}
+
 /* Utils */
 
 .content-wrapper {

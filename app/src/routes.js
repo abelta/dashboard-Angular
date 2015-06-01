@@ -7,7 +7,8 @@
             $routeProvider
                 .when('/users', {
                     templateUrl: 'src/users/view/indexUsers.html',
-                    controller: 'UserController'
+                    controller: 'UserController',
+                    controllerAs: 'userCrtl'
                 })
                 .when('/income', {
                     templateUrl: 'src/income/view/indexIncome.html',
